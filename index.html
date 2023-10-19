@@ -6,11 +6,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ringtunes Downloder</title>
     
-    <link rel="stylesheet" href="/Ringtunes-Downloder/assets/index-810db66e.css">
+    <link rel="stylesheet" href="/Ringtunes-Downloder/assets/index-c3b4dbc3.css">
   </head>
   <body>
     
-     <h1 class="text-red-400">HI iam magesh</h1>
+    <!-- Header -->
+     
+    <header class="text-white py-5 px-10 sm:px-20 bg-[url('https://images.ctfassets.net/hrltx12pl8hq/1IiGzNzljWQA1aGGSdsEN1/97c71debef1164417addf0839abb25f4/Pricing_Page_Hero_FInalv21.jpg')] ">
+        <!-- App Title -->
+        <div class="flex justify-between items-center">
+          <h4 class="text-xl font-bold">RingTunes</h4>
+          <a href="https://github.com/MageshVachiravel/Ringtunes-Downloder" target="_blank" class="hover:text-rose-400 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .999c-6.074 0-11 5.05-11 11.278c0 4.983 3.152 9.21 7.523 10.702c.55.104.727-.246.727-.543v-2.1c-3.06.683-3.697-1.33-3.697-1.33c-.5-1.304-1.222-1.65-1.222-1.65c-.998-.7.076-.686.076-.686c1.105.08 1.686 1.163 1.686 1.163c.98 1.724 2.573 1.226 3.201.937c.098-.728.383-1.226.698-1.508c-2.442-.286-5.01-1.253-5.01-5.574c0-1.232.429-2.237 1.132-3.027c-.114-.285-.49-1.432.107-2.985c0 0 .924-.303 3.026 1.156c.877-.25 1.818-.375 2.753-.38c.935.005 1.876.13 2.755.38c2.1-1.459 3.023-1.156 3.023-1.156c.598 1.554.222 2.701.108 2.985c.706.79 1.132 1.796 1.132 3.027c0 4.332-2.573 5.286-5.022 5.565c.394.35.754 1.036.754 2.088v3.095c0 .3.176.652.734.542C19.852 21.484 23 17.258 23 12.277C23 6.048 18.075.999 12 .999Z"/></svg>
+          </a>
+        </div>
+
+        <!-- Banner -->
+        <div class="text-center py-14 space-y-4">
+          
+          <h3 class="text-3xl font-bold">Download  <span class="text-rose-500"> Ringtunes </span> <br> in Seconds...</h3>
+          
+          <div class="relative max-w-lg mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="absolute text-gray-500 right-2 top-2.5"><path fill="currentColor" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0c.41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z"/></svg>
+
+              <input type="text" placeholder="Search by artist, movie name, etc.." class="px-4 py-2 rounded outline-none w-full text-gray-600">
+          </div>
+        </div>
+     </header>
+
+     <!-- Main -->
+
+     <div class="my-5 mx-5 sm:mx-10 sm:space-y-0 space-y-4 flex flex-col sm:flex-row sm:space-x-10">
+
+
+      <!-- filters -->
+
+      <div class="bg-gray-200 p-5 rounded shadow space-y-4 sm:max-w-sm h-fit">
+         <h4 class="text-xl font-semibold">Filters</h4>
+
+         <div class="space-y-4">
+         
+          <select name="Languages" id="languages" class="px-3 py-2 rounded w-full outline-none">
+           <option value="">Select Language</option>
+           <option value="english">English</option>
+           <option value="Tamil">Tamil</option>
+           <option value="Kannada">Kannada</option>
+          </select>
+
+          <select name="Artists" id="Artists" class="px-3 py-2 rounded w-full outline-none">
+            <option value="">Select Artists</option>
+            <option value="Anirudh Ravichandran">Anirudh Ravichandran</option>
+            <option value="Harris Jayaraj">Harris Jayaraj</option>
+            <option value="Yuvan Sankar Raja">Yuvan Sankar Raja</option>
+            <option value="pradeep">pradeep</option>
+          </select>
+
+          <input type="text" placeholder="Movie Title" class="px-3 py-2 rounded w-full outline-none">
+
+          <button class="px-4 py-2 rounded bg-rose-500 text-white w-full font-semibold">Search</button>
+
+        </div>
+      </div>
+
+      <!-- Content -->
+
+      <div class="space-y-4">
+        
+      <section>
+        <h4 class="font-semibold">Categories</h4>
+        <div class="flex space-x-4 mt-3">
+          <div class="w-20 h-20 sm:w-28 sm:h-28 rounded bg-gray-300"></div>
+          <div class="w-20 h-20 sm:w-28 sm:h-28 rounded bg-gray-300"></div>
+          <div class="w-20 h-20 sm:w-28 sm:h-28 rounded bg-gray-300"></div>
+        </div>
+
+      </section>
+
+      <section>
+        <h4 class="font-semibold">Browse by languages</h4>
+        <div class="flex space-x-4 mt-3">
+          <div class="w-20 h-20 sm:w-28 sm:h-28 rounded bg-gray-300"></div>
+          <div class="w-20 h-20 sm:w-28 sm:h-28 rounded bg-gray-300"></div>
+          <div class="w-20 h-20 sm:w-28 sm:h-28 rounded bg-gray-300"></div>
+        </div>
+
+      </section>
+      </div>
+     </div>
+
+       <!-- Popular Ringones -->
+
+       <section class="mx-5 my-4">
+        <h4>Poular Ringtones</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+        
+        <div class="bg-gray-300 rounded p-3 mt-3 lg:w-80 hover:scale-110 transition-all">
+
+
+          <div class="flex space-x-3">
+          
+          
+            <!-- Left Content -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" class="text-rose-500"><path fill="currentColor" d="m9.5 16.5l7-4.5l-7-4.5v9ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
+
+          </div>
+
+          <!-- Right Content -->
+
+          <div class="relative flex-1">
+            <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold">Tamil</span>
+            <h4 class="font-semibold">Leo Ringtone (Bd)</h4>
+            <small>Upload By Magesh</small>
+            <p class="text-sm"> <strong>Music:</strong> <a href="" class="hover:text-rose-600">Anirudh Ravichandran</a></p>
+            
+            <div class="pt-1">
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">25 Sec</span>
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">1.5MB</span>
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">250+</span>
+            </div>
+          </div>
+          </div>
+
+          <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 text-sm text-white font-semibold">DOWNLOAD NOW</button>
+
+        </div>
+
+        <div class="bg-gray-300 rounded p-3 mt-3 lg:w-80 hover:scale-110 transition-all">
+
+          <div class="flex space-x-3">
+          
+          
+            <!-- Left Content -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" class="text-rose-500"><path fill="currentColor" d="m9.5 16.5l7-4.5l-7-4.5v9ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
+
+          </div>
+
+          <!-- Right Content -->
+
+          <div class="relative flex-1">
+            <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold">Tamil</span>
+            <h4 class="font-semibold">Leo Ringtone (Bd)</h4>
+            <small>Upload By Magesh</small>
+            <p class="text-sm"> <strong>Music:</strong> <a href="" class="hover:text-rose-600">Anirudh Ravichandran</a></p>
+            
+            <div class="pt-1">
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">25 Sec</span>
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">1.5MB</span>
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">250+</span>
+            </div>
+          </div>
+          </div>
+
+          <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 text-sm text-white font-semibold">DOWNLOAD NOW</button>
+
+        </div>
+
+        <div class="bg-gray-300 rounded p-3 mt-3 lg:w-80 hover:scale-110 transition-all">
+
+          <div class="flex space-x-3">
+          
+          
+            <!-- Left Content -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" class="text-rose-500"><path fill="currentColor" d="m9.5 16.5l7-4.5l-7-4.5v9ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
+
+          </div>
+
+          <!-- Right Content -->
+
+          <div class="relative flex-1">
+            <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold">Tamil</span>
+            <h4 class="font-semibold">Leo Ringtone (Bd)</h4>
+            <small>Upload By Magesh</small>
+            <p class="text-sm"> <strong>Music:</strong> <a href="" class="hover:text-rose-600">Anirudh Ravichandran</a></p>
+            
+            <div class="pt-1">
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">25 Sec</span>
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">1.5MB</span>
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">250+</span>
+            </div>
+          </div>
+          </div>
+
+          <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 text-sm text-white font-semibold">DOWNLOAD NOW</button>
+
+        </div>
+
+        <div class="bg-gray-300 rounded p-3 mt-3 lg:w-80 hover:scale-110 transition-all">
+
+          <div class="flex space-x-3">
+          
+          
+            <!-- Left Content -->
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" class="text-rose-500"><path fill="currentColor" d="m9.5 16.5l7-4.5l-7-4.5v9ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
+
+          </div>
+
+          <!-- Right Content -->
+
+          <div class="relative flex-1">
+            <span class="absolute right-0 bg-green-300 px-3 py-1 text-xs font-semibold">Tamil</span>
+            <h4 class="font-semibold">Leo Ringtone (Bd)</h4>
+            <small>Upload By Magesh</small>
+            <p class="text-sm"> <strong>Music:</strong> <a href="" class="hover:text-rose-600">Anirudh Ravichandran</a></p>
+            
+            <div class="pt-1">
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">25 Sec</span>
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">1.5MB</span>
+            <span class="px-2 py-1 rounded text-sm font-medium bg-rose-200">250+</span>
+            </div>
+          </div>
+          </div>
+
+          <button class="px-4 py-2 rounded bg-green-600 hover:bg-green-700 w-full mt-4 text-sm text-white font-semibold">DOWNLOAD NOW</button>
+
+        </div>
+
+      </div>
+      </section>
+
+
 
   </body>
 </html>
